@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+body{
+    display: grid;
+    grid-template-areas: ;
+}
+header{
+    display: flex;
+    gap: 3px;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 2rem;
+}
+.ga{
+    color: rgb(87, 192, 241);
+}
+main{
+    display: grid;
+    grid-template-columns: 35% repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "area-1 area-2 area-3";
+}
+.big{
+    grid-area: area-3;
+}
