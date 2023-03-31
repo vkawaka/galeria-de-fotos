@@ -23,10 +23,29 @@ header{
 }
 main{
     display: grid;
-    grid-template-columns: 35% repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "area-1 area-2 area-3";
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 1vh);
+    grid-template-areas: 
+        "area-1"
+        "area-2" 
+        "area-3";
 }
 .big{
+    grid-area: area-1;
+    width: 400px;
+    height: 400px;
+}
+.primeira{
+    width: 200x;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    grid-area: area-2;
+}
+.segunda{
+    width: 200x;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
     grid-area: area-3;
 }
