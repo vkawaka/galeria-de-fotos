@@ -9,7 +9,7 @@ html{
 }
 body{
     display: grid;
-    grid-template-areas: ;
+
 }
 header{
     display: flex;
@@ -22,30 +22,45 @@ header{
     color: rgb(87, 192, 241);
 }
 main{
+    gap: 20px;
+}
+main .Top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 0;
+}
+.quatro{
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(2, 1vh);
-    grid-template-areas: 
-        "area-1"
-        "area-2" 
-        "area-3";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr);
+    width: 450px;
+    height: 450px;
 }
-.big{
-    grid-area: area-1;
-    width: 400px;
-    height: 400px;
+.big img{
+    width: 425px;
+    height: 425px;
 }
-.primeira{
-    width: 200x;
+.big p{
+    font-size: 0.85rem;
+    background-color:rgb(0, 0, 0, 0.4);
+    color: #F4F9FC;
+    position: absolute;
+    top: 420px;
+}
+.quatro img{
+    width: 200px;
     height: 200px;
-    display: flex;
-    flex-direction: column;
-    grid-area: area-2;
 }
-.segunda{
-    width: 200x;
-    height: 200px;
+.bottom{
     display: flex;
-    flex-direction: column;
-    grid-area: area-3;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.bottom img{
+    width: 280px;
+    height: 180px;
 }
